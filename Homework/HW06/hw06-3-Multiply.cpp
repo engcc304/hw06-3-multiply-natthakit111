@@ -1,5 +1,6 @@
 /*
-    รับตัวเลขจากผู้ใช้มา 2 จำนวน เพื่อแสดงแม่สูตรคูณบนหน้าจอคอมพิวเตอร์ โดยแสดงแม่สูตรคูณจากตัวเลขแรกที่รับจากผู้ใช้ ไปสิ้นสุดยังตัวเลขสุดท้ายที่รับจากผู้ใช้
+    รับตัวเลขจากผู้ใช้มา 2 จำนวน เพื่อแสดงแม่สูตรคูณบนหน้าจอคอมพิวเตอร์ โดยแสดงแม่สูตรคูณจากตัวเลขแรกที่รับจากผู้ใช้ 
+    ไปสิ้นสุดยังตัวเลขสุดท้ายที่รับจากผู้ใช้
     (โจทย์ข้อนี้ให้ใช้ For Loop เท่านั้น)
     
     Test case:
@@ -7,7 +8,6 @@
             3
         End :
             5
-    Output:
         3 x 1 = 3
         3 x 2 = 6
         3 x 3 = 9
@@ -78,21 +78,21 @@
 #include <stdio.h>
 
 int main() {
-    int start, end;
-    
-    printf("Start : ");
-    scanf("%d", &start);
-    
-    printf("End : ");
-    scanf("%d", &end);
-    
-    for (int i = start; i <= end; i++) {
-        for (int j = 1; j <= 9; j++) {
-            printf("%d x %d = %d\n", i, j, i * j);
-        }
-        
-        printf("\n");
-    }
 
-    return 0;
-}
+    int start , end ;
+    
+    printf( "Start : \n" ) ;
+    scanf( "%d", &start ) ;
+    
+    printf( "End : \n" ) ;
+    scanf( "%d", &end ) ;
+    
+    for ( int i = start ; i <= end ; i++ ) {
+        for ( int j = 1 ; j <= 9 ; j++ ) {
+            printf( "%d x %d = %d\n", i, j, i * j ) ;
+        }//end for
+        printf( "\n" ) ;
+    }//end for
+
+    return 0 ;
+}//end function main
